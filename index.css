@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("fonts/Roboto-Regular.ttf");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("fonts/Roboto-Medium.ttf");
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("fonts/Roboto-Bold.ttf");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;
+	src: url("fonts/Roboto-Black.ttf");
+	font-style: normal;
+	font-weight: 900;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.lt-block {
+	font-family: 'Roboto', sans-serif;
+	background-color: #eef2fb;
+}
+
+.lt-block-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.row {
+	background-color: #ffffff;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-wrap: wrap;
+}
+
+#ltBlock1314705211 .lt-tsr-block {
+	-webkit-flex: 1 0 380px;
+	-ms-flex: 1 0 380px;
+	-moz-flex: 1 0 380px;
+	flex: 1 0 380px;
+	max-width: 380px;
+	margin: 10px;
+}
+
+.image {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div[data-param="data/0/image"] {
+	background-image: url("img/1.jpg")!important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div[data-param="data/1/image"] {
+	background-image: url("img/2.jpg")!important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div[data-param="data/2/image"] {
+	background-image: url("img/3.jpg")!important;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.subheader {
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 1.1px;
+	color: #868686;
+	padding-top: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.header {
+	font-weight: 900;
+	font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1920 - 320)));
+	padding-top: 10px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+	line-height: calc(16px + (25 - 16) * ((100vw - 320px) / (1920 - 320)));
+	color: #868686;
+	padding-top: calc(10px + (15 - 10) * ((100vw - 320px) / (1920 - 320)));
+	padding-bottom: calc(15px + (45 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@media (max-width: 768px) {
+	.lt-block-wrapper {
+		height: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	.lt-tsr-block {
+		max-width: 320px;
+		flex: 1 0 320px;
+	}
+}
